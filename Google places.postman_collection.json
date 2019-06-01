@@ -1,0 +1,145 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Google places",
+		"_postman_id": "a4d38939-1476-3c5f-f11f-e7a580f7465e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/user/registerUser",
+			"request": {
+				"url": "localhost:3000/user/registerUser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\t\t\"fullName\": \"Pavan Maind\",\r\n\t\t\"emailId\": \"pavanm@winjit.com\",\r\n\t\t\"password\": \"winjit\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user/loginUser",
+			"request": {
+				"url": "localhost:3000/user/loginUser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"emailId\": \"pavanm@winjit.com\",\r\n\t\t\"password\": \"winjit\"\r\n\t\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user/getUserDataByToken",
+			"request": {
+				"url": "localhost:3000/user/getUserDataByToken",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbElkIjoicGF2YW5tQHdpbmppdC5jb20iLCJmdWxsTmFtZSI6IlBhdmFuIE1haW5kIiwidXNlcklkIjo1MywiaWF0IjoxNTU5Mjk5NjQ0LCJleHAiOjE1OTA4MzU2NDR9.9AuyuFlVxz-4On6needFMUffOLobkSn-1GVMzKBewrI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"contactId\": \"7\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user/getPlaceSuggestions",
+			"request": {
+				"url": "localhost:3000/user/getPlaceSuggestions",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbElkIjoicGF2YW5tQHdpbmppdC5jb20iLCJmdWxsTmFtZSI6IlBhdmFuIE1haW5kIiwidXNlcklkIjo1MywiaWF0IjoxNTU5Mjk5NjQ0LCJleHAiOjE1OTA4MzU2NDR9.9AuyuFlVxz-4On6needFMUffOLobkSn-1GVMzKBewrI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"searchString\": \"Winjit Technologies, Satpur\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/user/getPlaceDetails",
+			"request": {
+				"url": {
+					"raw": "localhost:3000/user/getPlaceDetails?place_id=ChIJAQAAAH3s3TsRO-4gV5gOiPU",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"getPlaceDetails"
+					],
+					"query": [
+						{
+							"key": "place_id",
+							"value": "ChIJAQAAAH3s3TsRO-4gV5gOiPU",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbElkIjoicGF2YW5tQHdpbmppdC5jb20iLCJmdWxsTmFtZSI6IlBhdmFuIE1haW5kIiwidXNlcklkIjo1MywiaWF0IjoxNTU5Mjk5NjQ0LCJleHAiOjE1OTA4MzU2NDR9.9AuyuFlVxz-4On6needFMUffOLobkSn-1GVMzKBewrI",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"searchString\": \"Sunshine Computers, Nashik\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
