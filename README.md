@@ -30,12 +30,6 @@ From file 'db.sql'
 From file 'Google places.postman_collection.json'
 ```
 
-## Add config file
-
-```
-config.js file (From email)
-```
-
 ## Usage
 
 ```
