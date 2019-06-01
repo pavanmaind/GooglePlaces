@@ -7,5 +7,5 @@ module.exports = {
   secretKey: "fwe4523423o995345", // for password encryption
   privateKey: "ji534n345n34534nkl5345nk345nk34534k534589udsdfdsdsjfdsnln", // for jwt token
   apiUrl: "https://maps.googleapis.com/",
-  googleApiKey: "AIzaSyB7se23dlX3CipDDiFPYWNSJKezrQ1ahe8" // Pavan Maind
+  googleApiKey: "" // Pavan Maind
 };
