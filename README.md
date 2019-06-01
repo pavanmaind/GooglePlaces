@@ -7,11 +7,8 @@ This is a google places app developed using Node.js, Express, MySQL and some oth
 Application allows user to search for google places using suggestions api. Once getting suggestions,
 the user can get the details for particular place using place details api and place id received in suggestions api.
 
-In the backend we store the searched places. We have maintained the count for search as well as preferred,
-When user uses the suggestions api we increase the count for search parameter, however if user uses the
-place details api, we increase the count for preferred parameter, which can be helpful in future. Also if
-the record already inserted for particular place_id we update the data for that record and update respective
-count (i.e. search/preferred count) and modified date.
+In the backend we store the searched places. We have maintained the count for search as well as preferred places, When user uses the suggestions api we increase the count for search parameter, however if user uses the
+place details api, we increase the count for preferred parameter in database, which can be helpful in future for analytics. Also if the record already exists for particular place_id we update the data for that record and update respective count (i.e. search/preferred count) as well as modified date.
 
 Version: 1.0.0
 
@@ -36,7 +33,7 @@ From file 'Google places.postman_collection.json'
 ## Add config file
 
 ```
-config.js file
+config.js file (From email)
 ```
 
 ## Usage
